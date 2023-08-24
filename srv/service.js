@@ -41,7 +41,7 @@ module.exports = cds.service.impl(async function () {
 
     this.before('NEW', 'Escalations', (req) => {
 
-        req.data.Status_code = 'INP';
+        req.data.Status_code = "DRF";
 
     });
 
@@ -49,7 +49,7 @@ module.exports = cds.service.impl(async function () {
 
         // After creation, update the status to 'In Progress'
 
-        req.data.status_code = 'INP';
+        req.data.status_code = 'INP'
 
     });
 
